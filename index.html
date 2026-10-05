@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b1418">
+<meta name="description" content="Brendan Akudo is a backend developer in Kisumu, Kenya, building Lightning, M-Pesa and mobility software with Go, Spring Boot and PostgreSQL.">
+<meta property="og:title" content="Brendan Akudo – Backend developer in Kisumu">
+<meta property="og:description" content="Payment and mobility software for Kenya: Lightning, M-Pesa, Go and Spring Boot.">
+<meta property="og:type" content="website">
+<title>Brendan Akudo – Backend developer in Kisumu</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚡%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+  <header class="site-head">
+    <a class="brand" href="#top" id="brand">Brendan Akudo</a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#work">Projects</a>
+      <a href="#writing">Writing</a>
+      <a href="#background">Background</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">I build payment and mobility software for Kenya.</h1>
+        <p><strong id="intro-name">Brendan Akudo</strong> is a backend developer in Kisumu working with Go, Spring Boot and PostgreSQL. I'm an apprentice at Zone01 Kisumu, and my projects cover Lightning and M-Pesa payments, ride-sharing and tools for farmers.</p>
+        <div class="actions">
+          <a class="btn primary" href="#work">See projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="probe" role="group" aria-label="Interactive API demo">
+        <div class="probe-head">
+          <span><span class="method">GET</span>/brendan</span>
+          <span class="hint">Try the API</span>
+        </div>
+        <div class="probe-out" id="probe-out" aria-live="polite"></div>
+        <div class="probe-foot">
+          <button class="btn primary" id="probe-btn" type="button">Send request</button>
+          <span class="note" id="probe-note">This endpoint works like the L402 gateway I'm building: no payment, no response.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Projects</h2>
+      <p class="lede">Select a project to read about it, or filter the list by technology.</p>
+      <div class="filters" id="filters"></div>
+      <p class="count" id="count"></p>
+      <div class="work-grid">
+        <ul class="plist" id="plist"></ul>
+        <article class="detail" id="detail" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section class="section" id="writing" aria-labelledby="writing-title">
+      <h2 id="writing-title">Writing</h2>
+      <p class="lede">I publish technical articles on dev.to, from Lightning developer guides to Go fundamentals.</p>
+      <ul class="articles" id="articles"></ul>
+    </section>
+
+    <section class="section" id="background" aria-labelledby="bg-title">
+      <div class="bg-grid">
+        <div>
+          <h2 id="bg-title">Background</h2>
+          <p class="lede">My working stack includes Go, Spring Boot and PostGIS, and M-Pesa's Daraja API comes up often. I started out with Laravel and PHP, then Node.js and Express, before moving to Go.</p>
+        </div>
+        <dl class="facts" id="facts"></dl>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p class="lede">Have a payments, mobility or agritech problem in Kenya? I'd like to hear about it.</p>
+      <div class="contact-links" id="contact-links"></div>
+      <p class="place" id="place"></p>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <span id="foot-name"></span>
+  </footer>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
